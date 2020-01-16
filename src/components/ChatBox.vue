@@ -19,7 +19,7 @@
         id="username"
         type="text"
         v-model="msg"
-        placeholder="Cari Penjual "
+        placeholder="Ketik pesan "
       />
       <button
         class="bg-green-500 rounded px-2 text-xs text-gray-100 hover:none mx-2"
@@ -54,7 +54,6 @@ export default {
   mounted () {
     let container = document.querySelector('#chat')
     container.scrollTop = (container.scrollHeight + 100)
-    console.log(container.scrollTop)
   },
   methods: {
     sendMessage () {
